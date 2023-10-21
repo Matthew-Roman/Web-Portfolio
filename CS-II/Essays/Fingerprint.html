@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="About Me">
+    <title>Matt's Portfolio</title>
+    <link rel="stylesheet" href="template.css">
+    <script src="template.js"></script>      
+    <script src="https://kit.fontawesome.com/1881da3960.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/arcade" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <div class="header__top--nav">
+	<i id="folder-close" class="fa-solid fa-folder"></i>
+	<h2 class="header__top--page-indicator">Fingerprints</h2>
+      </div>
+      <ul class="header__nav">
+	<i id="folder-open" class="fa-solid fa-folder-open"></i>
+	<li class="nav__link"> <a href="../../index.html">About Me</a> </li>
+	<li class="nav__link"> <a href="../../course%20history.html">Course History</a> </li>
+	<li class="nav__link"> <a href="../../project%20list.html">Projects</a> </li>
+	<li class="nav__link"> <a href="../../essays.html">Essays</a> </li>
+	<li class="nav__link"> <a href="../../blogs.html">BLOG</a> </li>
+      </ul> 
+    </header>
+
+    <!-- Content goes in here  -->
+    <main>
+      <h2 class="main__title">Website Security
+	<br>By: Matthew Roman<br>
+	Allen ISD Steam Center
+	<br>Advanced CS-II<br>
+	Mr. Ben-Yaakov
+	<br>28/8/2022<br>
+      </h2>
+      
+      <p class="main__paragraph">
+	The Internet is a way for information to flow around. However, with all this information flowing around how do we know that we are connected to the REAL deal? Websites are easy to make, so there must be some sort of security for the connection between a web browser and web server to ensure that our information is safe. First let's go over how websites work.
+      </p>
+      <p class="main__paragraph">
+	A web browser is the software we use to browse the internet, like Google. A web server is computer software that accepts requests via HTTP/HTTPS. HTTP was the original way for web browsers and web servers to communicate. However, as people started using the internet more frequently HTTP would eventually become outdated as it wasn't secure enough for its users. This is why HTTPS was made. There are two purposes of using HTTPS , one is for privacy(encryption) and another for security(authentication). In a simple meaning it was to secure data transfering from the user to the website. HTTPS was so secure it was essentially refered to as the "going dark" time in technology(Gibson, 2020). In response to this HTTPS Proxy Appliance was made, which is a device which is used to monitor the actions of users. We must first know that a CA(certificate authority) is a orginization who websites verify themselves and their identity, this would help with security for users and organizations. To subvert it all a institution had to do was install a Pseudo Certificate Authority. The way it works is when anyone makes a secure connection in the institutions network it gets intercepeted by the providers Proxy Appliance, which then makes an impersonation using the PSA to sign the false web server certificate it made.
+      </p>      
+      <p class="main__paragraph">
+	A MITM (man in the middle) is a were the attacker can alter communication between two parties. This would mean that rather than connecting to the site they are actually connected to the attacker who is either evesdropping or impersonating. For the user this would cause their personal information leaked which is extremely dangerous. This is exactly what a Proxy Appliance does. A client may want to connect with the internet but the MITM (Proxy Appliance) cuts that off essentially doing what was just explained in the previous paragarph.
+      </p>
+      <p class="main__paragraph">
+	Sadly, as (Gibson, 2020) says this SSL interception can not be stopped however we can detect it. Hashes are mathematical algorithims which provide secure communication. When a cryptographic hash fingerprints a certificate any change to it will result in a different fingerprint. SSL Proxy has to provide a spoofed certificate containing a public key which is matching with the private key, and private keys aren't the same as the remote server certificate(Gibson, 2020). This means no matter how much a SSL Proxy will try to copy a remotes servers certificate it will be impossible to do it. This will easily be seen through a web browsers UI. We must be careful though! We might try to compare the certificate fingerprints on huge websites that will most likely use a different connection. This would then result in the user thinking that their connection is intercepted when it's not. In other words it's like flaging a file as malicious when it’s not(Arntz, 2017). That is what is called False-positive. False-negative would be like saying it does NOT contain a virus, but it actually does.
+      </p>
+      <p class="main__paragraph">
+	Privacy is a major topic these days. I believe that no one should have access to private information unless they are given the task of handling such matters from higher authorities. Services provided by institutions such as computers, tablets, internet, and other things are allowed to be watched or evesdropped. Anything connected with their services is able to be monitored by them becuase it's their services. Outside of their network they can monitor anything that's considered their device but not other devices. Lastly institutions do not have the right to force downloads of their programs on peoples personal devices without consent.
+      </p>
+    </main>
+
+    <footer>
+      <div class="footer__item-github">
+	Github: <a href="https://github.com/Matthew-Roman">My Github</a>
+      </div>
+      <div class="footer__item-contact">
+	Email: romanmatthew85@yahoo.com
+      </div>
+    </footer>
+  </body>
+</html>

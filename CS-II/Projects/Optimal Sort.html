@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="About Me">
+    <title>Matt's Portfolio</title>
+    <link rel="stylesheet" href="template.css">
+    <script src="template.js"></script>      
+    <script src="https://kit.fontawesome.com/1881da3960.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/arcade" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <div class="header__top--nav">
+	<i id="folder-close" class="fa-solid fa-folder"></i>
+	<h2 class="header__top--page-indicator">Optimal Sort</h2>
+      </div>
+      <ul class="header__nav">
+	<i id="folder-open" class="fa-solid fa-folder-open"></i>
+	<li class="nav__link"> <a href="../../index.html">About Me</a> </li>
+	<li class="nav__link"> <a href="../../course%20history.html">Course History</a> </li>
+	<li class="nav__link"> <a href="../../project%20list.html">Projects</a> </li>
+	<li class="nav__link"> <a href="../../essays.html">Essays</a> </li>
+	<li class="nav__link"> <a href="../../blogs.html">BLOG</a> </li>
+      </ul> 
+    </header>
+
+    <!-- Content goes in here  -->
+    <main>
+      <div class="main__title"><b>Optimal Sort</b></div>
+
+      <div class="main__paragraph">
+	<h2 class="main__paragraph-title"></h2>
+	<div class="main__paragraph-body">
+	  <img src="../../Images/conspiracy_theory.jpg" class="main__paragraph-body_img before">
+	  <p class="main__paragraph-body--text">
+	    With the help of <a href="https://github.com/AaronB432"> Aaron </a> we were able to make a algorithm for sorting words. So far this algorithm will take each element from the user and assign them to an array. The current algorithm requires for an array to split into two halves and be sorted using the classic bubble sort. Then we merge the two arrays by appending their elements to a new array, which then is also sorted. My next GOAL is to not split it into halves but rather by twos, so we might have 16 elements which will be split into two's resulting in 8 arrays. From there we merge and sort them which will eventually lead to one big array which is then printed.
+	  </p>
+	  <img src="../../Images/conspiracy_theory.jpg" class="main__paragraph-body_img after">
+	</div>
+      </div>
+
+      <div class="main__paragraph">
+	<h2 class="main__paragraph-title"></h2>
+	<div class="main__paragraph-body">
+	  <p class="main__paragraph-body--text">
+	    Here is the Flowchart, this algorithm does make sense but the code isn't in line with it. This is because I didn't know my sorting algorithm needed Recursion - <b>function calls back to itself</b>
+	  <p class="main__paragraph-body text">
+	</div>
+      </div>
+
+      <div class="main__paragraph">
+	<h2 class="main__paragraph-title"></h2>
+	<div class="main__paragraph-body">
+	  <p class="main__paragraph-body--text">
+	    Here's the test that I ran to show it's efficiency. Its really terrible for 1,000 words and in general should be faster.
+	  </p>	  
+	</div>
+      </div>
+      
+      <div class="main__paragraph">	
+	<h2 class="main__paragraph-title"></h2>
+	<div class="main__paragraph-body">
+	  <p class="main__paragraph-body--text">	  
+	    To start off each graph has 6 ordered, random, and reversed files for each sort. The first bar is 1 word and multiplies by 10 when you get to the next bar. Once it's at the 6th bar, the bar resets to 1 word but is a new text file. This can be seen in the horizontal axis names.
+	    From the beginning I had hypothesized that the major impact would be the size of the text file. This was true, but there was a new factor and that was the type of text file. This was true in Selection Sort because it managed to keep the 10,000 word text files reletively close in time, unlike the other algorithms. Neither are great sorting algorithms to conclude with. They thrive when the text file is sorted, which in a real life perspective is utterly useless. To end off, I disapprove these algorithms when sorting data because of their performance. 
+
+	  </p>
+	</div>
+      </div>
+
+      <div class="main__paragraph">
+	<h2 class="main__paragraph-title"></h2>
+	<div class="main__paragraph-body">
+	  <p class="main__paragraph-body--text">
+	    For the Bubble Sort data it tends to be affected by the type of file and size. It did grow for each type of text file which isn't good. The whole point is to find a strong method for large amounts of data and this one fails all three times. It only worked well with files that contained little amounts of data.	    
+	  </p>
+	</div>
+      </div>
+
+      <div class="main__paragraph">
+	<h2 class="main__paragraph-title"></h2>
+	<div class="main__paragraph-body">
+	  <p class="main__paragraph-body--text">
+	    Oddly enough for the already sorted text files, Insertion did well. It's ordered text file did way better than the next two types of text file. It has somewhat the same result as Bubble Sort with random and reversed text files which makes it inefficient. Why do I say this when it did well on ordered files? Because in the real world a ordered or near ordered file is rare to find. Not only that what we are really looking for in this project is a sorting algorithm that is reliable for sorting large amounts of data, and you'll notice that none of these are actually to useful.
+	  </p>	  
+	</div>
+      </div>
+      
+      <div class="main__paragraph">
+	<h2 class="main__paragraph-title"></h2>
+	<div class="main__paragraph-body">
+	  <p class="main__paragraph-body--text">
+	    Lastly, Selection Sort. This one is rather consistant but still lacking. It's almost a carbon copy of the Bubble Sort thus proving its inefficiency because Bubble Sort doesn't do to well. However, I would still use it over Bubble Sort because of it managed to finish under less time. Truly none of these did well and are all lacking in being an effiecient sorting method for large amounts of data. 
+	  </p>
+	</div>
+      </div>
+      
+      
+    </main>
+
+    <footer>
+      <div class="footer__item-github">
+	Github: <a href="https://github.com/Matthew-Roman">My Github</a>
+      </div>
+      <div class="footer__item-contact">
+	Email: romanmatthew85@yahoo.com
+      </div>
+    </footer>
+  </body>
+</html>

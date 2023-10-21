@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="About Me">
+    <title>Matt's Portfolio</title>
+    <link rel="stylesheet" href="template.css">
+    <script src="template.js"></script>      
+    <script src="https://kit.fontawesome.com/1881da3960.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/arcade" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <div class="header__top--nav">
+	<i id="folder-close" class="fa-solid fa-folder"></i>
+	<h2 class="header__top--page-indicator">Conspiracy <br>Theories</br></h2>
+      </div>
+      <ul class="header__nav">
+	<i id="folder-open" class="fa-solid fa-folder-open"></i>
+	<li class="nav__link"> <a href="../../index.html">About Me</a> </li>
+	<li class="nav__link"> <a href="../../course%20history.html">Course History</a> </li>
+	<li class="nav__link"> <a href="../../project%20list.html">Projects</a> </li>
+	<li class="nav__link"> <a href="../../essays.html">Essays</a> </li>
+	<li class="nav__link"> <a href="../../blogs.html">BLOG</a> </li>
+      </ul> 
+    </header>
+
+    <!-- Content goes in here  -->
+    <main>
+      <div class="main__title"><b>Conspiracy Theories</b></div>
+
+      
+      <h2 class="main__paragraph-title">What is a Conspiracy Theory?</h2>
+      <div class="main__paragraph-body">
+	<p class="main__paragraph-body--text">
+	  <img src="../../Images/conspiracy_theory.jpg" class="main__paragraph-body_img before">
+	  A straightforward way of defining a conspiracy theory is "an attempt to explain an event that was caused by individuals".
+	  This is topic is important as there have been an abundance of those just in the last century. Take for example the most
+	  famous one known to date, the assasination of JFK. These conspiracy theories result in people lacking trust in certain sectors
+	  of the world such as the government, large corporations, news outlets, etc ... These ideas or inferences created by individuals
+	  cause not just paranoia in themselves but also in others which lead to harmful thoughts. This page will not discuss necessarily
+	  those conspiracy theories, rather this will focus on describing certain algorithms used and the potential harm that could be caused.
+	  <img src="../../Images/conspiracy_theory.jpg" class="main__paragraph-body_img after">
+	</p>
+      </div>
+
+
+      <h2 class="main__paragraph-title">Basics of Recommendation algorithm</h2>
+      <div class="main__paragraph-body">
+	<p class="main__paragraph-body--text">
+	  <img src="../../Images/basics_rec_algo.png" class="main__paragraph-body_img before">
+	  The absolute main purpose of a recommendation algorithm is to suggest content relevant to the user. To simply put it when a user
+	  views or maybe interacts in some way with content, similar content is then found and suggested to the user. Looking into a deeper
+	  perspective the machine analyzes the users interactions and collects data which is then plugged into an algorithm, from there
+	  the algorithm takes place and returns <i>suggestions</i> that match the data given. There are two types, collaborative and content
+	  filtering. Content based filtering revolves around finding similar content to what a user might have interacted with, while
+	  collaborative based filtering relies on content similar users interact with to suggest to a user.
+	  <img src="../../Images/basics_rec_algo.png" class="main__paragraph-body_img after">
+	</p>
+      </div>
+
+
+      <h2 class="main__paragraph-title">Feedback Loop</h2>
+      <div class="main__paragraph-body">
+	<p class="main__paragraph-body--text">
+	  <img src="../../Images/feedback_loop.png" class="main__paragraph-body_img before">
+	  This component of a recommendation algorithm can be thought of as a filter bubble. As an individual interacts in this bubble
+	  feedback is recived by the machine and the machine in turn refines these interactions(now data). The bubble as a result shrinks
+ 	  and content outside of this bubble begins to be rejected. User interactions is taken as data, then put into an algorithm which
+	  takes into consideration what the feedback was recieved(negative or positive), then returns similar preferences. Negative
+	  feedback is filtered while positive is further suggested. One can think of this as likes and dislikes, if a person likes a video
+	  YouTube's Feeback Loop would return content similar to that persons like and filter out disliked content.
+	  <img src="../../Images/feedback_loop.png" class="main__paragraph-body_img after">
+	</p>
+      </div>
+
+
+      <h2 class="main__paragraph-title">Conspiracy Theories & Algorithmic Amplification</h2>
+      <div class="main__paragraph-body">
+	<p class="main__paragraph-body--text">	  
+	  As mentioned earlier <b>Conspiracy Theories</b> are, in short, sensational. Due to the sensation they convey they draw in 
+	  lots of user interactions which affects the <b>Recommendation Algorithm</b>. As usual when a user interacts with whatever content
+	  they desire, the Algorithm will expand in that area of content. <b>Conspiracy Theories</b>, for the most part, are not good content
+	  as they can create distorted thoughts. The way these two tie together is that if the user continues to look into
+	  <b>Conspiracy Theories</b>, the <b>Recommendation Algorithm</b> will further expand on that content and suggest it.
+	  The end result is that the Algorithm then starts to suggest this type of content more and more. Take for example this <a href="https://www.independent.co.uk/life-style/social-media-facebook-twitter-politics-b1870628.html">study</a> done to show how negative content has more
+	  interactions than positive content. Such false negative content is read by the <b>Recommendation Algorithm</b> and is amplified
+	  which then gets back to the user.
+	</p>
+      </div>
+
+
+      <h2 class="main__paragraph-title">Platform Incentives</h2>
+      <div class="main__paragraph-body">
+	
+	<p class="main__paragraph-body--text">	  
+	  <img src="../../Images/incentive.png" class="main__paragraph-body_img before">
+	  Incentives can be defined as a goal that is desired. As with most companies, they desire to hook the user to the platform and gain revenue.
+	  How do they acommplish this task? By using the <b>Recommendation Algorithm</b>, mind blowing! Take Twitter for example.
+	  Their goal is to "connect its users and allow them to share their thoughts with their followers and others through the use of hashtags",
+	  but another goal is to gain a source of income. For example the <b>Feedback Loop</b>, whatever content the user was hooked to
+	  is then be suggested to them in the form of an advertisment in order to make revenue. The issue is that at the same time they make revenue,
+	  the algorithm is narrowing down that 'Bubble' of content that user is exposed to. The company, likely without intent to do this, is
+	  being damaged in terms of the quality of their content displayed due to a lack in other viewpoints.
+	  <img src="../../Images/incentive.png" class="main__paragraph-body_img after">
+	</p>
+      </div>
+
+
+      <h2 class="main__paragraph-title">Potential for Explotation</h2>
+      <div class="main__paragraph-body">
+	<p class="main__paragraph-body--text">	  
+	  Given the barebones of how a <b>Recommendation Algorithm</b> functions along with a actual component of the algorithm, the <b>Feedback Loop</b>,
+	  many have taken advantage of this to spread harmful content. Looking back at <b>Conspiracy Theories</b> they are mostly
+	  presented in a eye-catching way. Individuals with bad intentions know this and deliberately do this to engage a user. As a result
+	  the user consumes this harmful content and their mind is engaged with it. The <b>Feedback Loop</b> for example can be fed 
+	  repeatedly harmful content and sent to the user while at the same time a companies <b>Platform Incentives</b> will be painted in a bad picture.
+	  People, if not careful, are almost or completely blinded by misleading content which can further expand to other platforms and pollute
+	  their <b>Recommendation Algorithms</b>. Others, not so easily persuaded, may view content in the platform as uncredible and conclude
+	  that the platform does not deserve peoples trust. The consequences of such intent lead to division amongst users along with damage to
+	  the platforms credibility.
+	</p>
+      </div>
+      
+      
+    </main>
+
+    <footer>
+      <div class="footer__item-github">
+	Github: <a href="https://github.com/Matthew-Roman">My Github</a>
+      </div>
+      <div class="footer__item-contact">
+	Email: romanmatthew85@yahoo.com
+      </div>
+    </footer>
+  </body>
+</html>

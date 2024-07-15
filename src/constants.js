@@ -47,6 +47,6 @@ export const dialogueData = {
 
     "past work": `<b>PAST WORK</b> <br><br> 
     As time progresses I will import all my work from my old site to the new one, at the current moment I feel unmotivated to do a 
-    bunch of work. This procrastination is gonna bite me back me real bad lol.`
+    bunch of work. This procrastination is gonna bite me back me real bad lol.`,
 
-}
+};

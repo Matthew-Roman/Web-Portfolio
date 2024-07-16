@@ -22,7 +22,7 @@ export const dialogueData = {
     Random things I find on the internet, 
     <ul>
         <li>
-            <a href="">egg</a>
+            <a href="https://www.youtube.com/watch?v=dV_lf1kyV9M">CS Architecture in Minecraft</a>
         </li>
     </ul>`,
     

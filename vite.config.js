@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 
-// do all changes on dist folder first as it provides the 'npm run preivew' command
-// once it looks good then change the actual files in public, src, etc ... 
+// when changing the site change the base name to ./ then revert it back once all changes have been finished 
 export default defineConfig({
     base: "/Web-Portfolio",
     build: {

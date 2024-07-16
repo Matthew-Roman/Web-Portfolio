@@ -13,10 +13,8 @@ export const dialogueData = {
     I enjoy Minecraft pvp and cooking. Aaaaaaaand that's it, I got nothing more to say about myself.`,
    
     fridge: `<b>FRIDGE</b> <br><br>
-    This probably one of the worst ideas I have on this site cause of the constant updates, 
-    but I figure why not discuss what I want to eat or have eaten today. Today is 7/14/2024 and the first thing I ate was my moms breakfast, 
-    as always it's super! As of now I haven't eaten dinner or lunch but then again my lazy self got up at 9 today, so ... I'm feeling Nashville 
-    hot chicken today, sounds yummy!`,
+    A bit late on the food update, as of now its 7:54 pm and I just ate tacos. They were quite good except birria(idk if thats how its spelled)
+    goes better with the orange sauce it usually has. These that my mom made didn't have it but they were still pretty dang good. `,
    
     misc: `<b>MISC</b> <br><br> 
     Random things I find on the internet, 
